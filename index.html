@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars RPG</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container-fluid py-1">
+        <div class="header text-center my-auto py-4">
+            <h1>Star Wars RPG</h1>
+        </div>
+    </div>
+    <div id="main" class="container font-weight-bold">
+        <div  class="row text-center ">
+            <div class="col-md-3 px-1">
+                <figure id="chewy" class="figure">
+                    <img  class="img-fluid px-1" src="assets/images/chewy.jpg"/>
+                    <figcaption id="chewy-hp" class="figure-caption text-dark text-center"></figcaption>
+                </figure>            
+            </div>
+            <div class="col-md-3 px-1">
+                <figure id="leia" class="figure">
+                    <img  class="px-1" src="assets/images/leia.jpg"/>
+                    <figcaption id="leia-hp" class="figure-caption text-dark text-center"></figcaption>
+                </figure>               
+            </div>
+            <div class="col-md-3 px-1">
+                <figure id="vader" class="figure">
+                    <img class="px-1" src="assets/images/vader.jpg"/>
+                    <figcaption id="vader-hp" class="figure-caption text-dark text-center"></figcaption>
+                </figure>      
+            </div>
+            <div class="col-md-3 px-1">
+                <figure id="r2d2" class="figure">
+                    <img class="px-1" src="assets/images/r2d2.jpg"/>
+                    <figcaption id="r2d2-hp" class="figure-caption text-dark text-center"></figcaption>
+                </figure>       
+            </div>
+        </div>
+        <div class="row ">
+            <div id="myChar" class="col-md-6 text-left">
+              
+            </div>
+            <div id="enemies" class="col-md-6  text-right">
+
+            </div>
+        </div>
+        <div class="row text-center">
+            <div id="buttons" class="col-md-6 py-3 my-3">
+                <button id="attack" disabled class="btn btn-lg btn-default disabled">
+                    Attack
+                </button>
+                
+            </div>
+            <div class="col-md-6 py-3 my-3 text-left">
+                <p id="message">Select your character <br/> Select an enemy.<br/> Click attack to Play!</p>
+                <p id="hp"></p>
+                <p id="enemyHp"></p>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
