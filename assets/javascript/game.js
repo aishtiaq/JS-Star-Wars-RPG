@@ -65,16 +65,17 @@ var game = {
             this.message="";
             this.myHp="";
             this.enemyHp="";
-            if(character===this.myPlayer){
+            if(character===this.myPlayer[0]){
+                
                 this.message="You can't fight yourself";
-                return; 
+                this.updateData();
+                return false; 
             }
             this.currentEnemy = $.grep(this.characters, function(v) {
                 
                 return v[0] === character;
             });
-            
-
+          
             var charH3=$('<h3 id="currOp">');
             charH3.html("Current Opponent");
             $('#myChar').append(charH3);
