@@ -73,7 +73,6 @@ var game = {
                 
                 return v[0] === character;
             });
-            console.log( this.currentEnemy[0]);
             
 
             var charH3=$('<h3 id="currOp">');
@@ -122,7 +121,7 @@ var game = {
             }
             this.updateData();
             if(jQuery.isEmptyObject(this.enemiesRem) && !this.enemySelected){
-                console.log("i am here");
+                
                 this.message="Game Over. You Won!";
                 this.myHp="";
                 this.enemyHp="";
